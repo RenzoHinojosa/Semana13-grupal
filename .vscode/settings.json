@@ -1,0 +1,11 @@
+{
+  "python.defaultInterpreterPath": "${workspaceFolder}/.venv/Scripts/python.exe",
+  "python.terminal.activateEnvironment": true,
+  "files.exclude": { "**/__pycache__": true },
+  "editor.formatOnSave": false,
+  "rest-client.environmentVariables": {
+    "$shared": {},
+    "local": { "host": "http://127.0.0.1:8000" }
+  },
+  "python-envs.defaultEnvManager": "ms-python.python:system"
+}

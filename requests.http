@@ -1,0 +1,22 @@
+@base = http://127.0.0.1:8000
+
+### TecnoMarket: listado paginado
+GET {{base}}/api/productos/
+
+### Filtro producto por marca y precio
+GET {{base}}/api/productos/?marca=NovaTech&precio_min=500&precio_max=3500&disponible=true&ordering=precio
+
+### Búsqueda full-text
+GET {{base}}/api/productos/?search=gaming%20laptop
+
+### Biblioteca: catálogo paginado
+GET {{base}}/api/biblioteca/libros/?categoria=Literatura&disponible=true&search=vallejo&ordering=titulo
+
+### TecnoMarket: Swagger schema
+GET {{base}}/api/schema/
+
+### Crear token: pega username y password en REST Client
+POST {{base}}/api/token/
+Content-Type: application/json
+
+{"username":"cliente01","password":"cliente123"}
